@@ -1,0 +1,26 @@
+blank_issues_enabled: false
+
+contact_links:
+  - about: |
+      Ideas for new features? Open a discussion with the `Proposals` label
+
+    name: |
+      💡 Feature Request
+
+    url: https://github.com/sytizen/sytizen/discussions/new?category=proposals
+
+  - about: |
+      Open a Discussion in GitHub with `Q&A` label
+
+    name: |
+      🙋‍♂️Questions
+
+    url: https://github.com/sytizen/sytizen/discussions/new?category=q-a      
+
+  - about: |
+      Interact with other people using Sytizen
+
+    name: |
+      🗣️ Sytizen Discord Server
+
+    url: https://discord.gg/cn7vwrTS6t
