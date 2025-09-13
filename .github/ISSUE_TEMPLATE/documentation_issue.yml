@@ -1,0 +1,33 @@
+body:
+  - attributes:
+      value: |
+        Thank you for contributing!
+
+        For documentation updates - we would happily accept PRs, so feel free to
+        update and open a PR to the `main` branch. Otherwise let us know in this 
+        issue what you felt was missing or incorrect.
+      
+    type: markdown
+
+  - attributes:
+      description: |
+        A concise description of what you expected to see in the docs
+
+      label: |
+        Describe what's incorrect/missing in the documentation
+
+    type: textarea
+
+    validations:
+      required: true
+
+description: |
+  Something is wrong with the Sytizen docs
+
+labels:
+  - docs
+
+name: 📚 Documentation Issue
+
+title: |
+  [Docs]: 
