@@ -1,0 +1,75 @@
+body:
+  - attributes:
+      value: |
+        Thank you for helping to improve Sytizen!
+
+        Please note that **all** bugs must have a **minimal** and **runnable**
+        reproduction, meaning that it is not just pointing to a deployed site
+        or a branch in your existing application, or showing a small code
+        snippet.
+
+    type: markdown
+
+  - attributes:
+      description: |
+        Link to reproduction and steps to reproduce the behaviour
+
+      label: |
+        Reproduction
+
+    id: reproduction
+
+    type: textarea
+
+    validations:
+      required: true
+
+  - attributes:
+      description: |
+        Output of `bunx envinfo --binaries --browsers --npmPackages 'bun,@sytizen/*' --system`
+
+      label: |
+        System Info
+
+      placeholder: |
+        Binaries, Browsers, NPM Packages, System
+
+      render: shell
+
+    id: system-info
+
+    type: textarea
+
+    validations:
+      required: true
+    
+  - attributes:
+      description: |
+        A concise description of what you expected to happen.
+
+      label: |
+        Expected Behaviour
+
+    type: textarea
+
+    validations:
+      required: true
+
+  - attributes:
+      description: |
+        A concise description of what you're experiencing.
+
+      label: |
+        Actual Behaviour
+
+    type: textarea
+
+    validations:
+      required: true
+
+description: Something is wrong with Sytizen
+
+labels:
+  - bug
+
+name: 🐛 Bug Report
