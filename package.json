@@ -12,7 +12,9 @@
 		"typescript": "catalog:peer"
 	},
 	"private": true,
-	"scripts": {},
+	"scripts": {
+		"typecheck": "tsc"
+	},
 	"type": "module",
 	"workspaces": {
 		"catalog": {},
