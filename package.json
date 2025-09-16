@@ -8,7 +8,9 @@
 	},
 	"license": "MIT",
 	"packageManager": "bun@1.2.22",
-	"peerDependencies": {},
+	"peerDependencies": {
+		"typescript": "catalog:peer"
+	},
 	"private": true,
 	"scripts": {},
 	"type": "module",
