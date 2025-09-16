@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json.schemastore.org/package.json",
+	"devDependencies": {},
+	"imports": {
+		"#*": "./*"
+	},
+	"license": "MIT",
+	"packageManager": "bun@1.2.22",
+	"peerDependencies": {},
+	"private": true,
+	"scripts": {},
+	"type": "module",
+	"workspaces": {
+		"catalog": {},
+		"catalogs": {
+			"dev": {},
+			"peer": {}
+		},
+		"packages": [
+			"packages/*"
+		]
+	}
+}
