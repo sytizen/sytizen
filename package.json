@@ -13,7 +13,9 @@
 	"workspaces": {
 		"catalog": {},
 		"catalogs": {
-			"dev": {},
+			"dev": {
+				"@types/bun": "^1.2.22"
+			},
 			"peer": {}
 		},
 		"packages": [
