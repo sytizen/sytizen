@@ -18,7 +18,9 @@
 			"dev": {
 				"@types/bun": "^1.2.22"
 			},
-			"peer": {}
+			"peer": {
+				"typescript": "^5.9.2"
+			}
 		},
 		"packages": [
 			"packages/*"
