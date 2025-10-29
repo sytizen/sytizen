@@ -1,7 +1,11 @@
 {
   "lockfileVersion": 1,
   "workspaces": {
-    "": {},
+    "": {
+      "devDependencies": {
+        "@biomejs/biome": "catalog:",
+      },
+    },
     "packages/configs": {
       "name": "@sytizen/configs",
       "version": "0.0.0",
