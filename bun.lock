@@ -1,0 +1,13 @@
+{
+  "lockfileVersion": 1,
+  "workspaces": {
+    "": {},
+    "packages/configs": {
+      "name": "@sytizen/configs",
+      "version": "0.0.0",
+    },
+  },
+  "packages": {
+    "@sytizen/configs": ["@sytizen/configs@workspace:packages/configs"],
+  }
+}
