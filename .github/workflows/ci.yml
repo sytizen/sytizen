@@ -1,0 +1,29 @@
+concurrency:
+  cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.ref }}
+jobs:
+  biome:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v5
+      - name: cd ${{ matrix.package-directory }}
+        run: cd ${{ matrix.package-directory }}
+      - name: setup bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version-file: package.json
+      - name: install dependencies
+        run: bun install --frozen-lockfile
+      - name: run biome
+        run: bun biome ci
+    strategy:
+      fail-fast: true
+      matrix:
+        package-directory:
+          - .
+on:
+  pull_request:
+  push:
+    branches:
+      - master
