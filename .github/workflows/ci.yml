@@ -22,6 +22,7 @@ jobs:
       matrix:
         package-directory:
           - .
+          - packages/configs
 on:
   pull_request:
   push:
