@@ -1,0 +1,7 @@
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"extends": ["@sytizen/configs/biome.json"],
+	"files": {
+		"includes": ["**", "!!packages"]
+	}
+}
