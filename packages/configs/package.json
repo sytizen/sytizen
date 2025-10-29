@@ -12,12 +12,14 @@
 		"@biomejs/biome": "catalog:"
 	},
 	"exports": {
+		"./biome.json": "./configs/biome.json",
 		"./package.json": "./package.json"
 	},
 	"files": [
 		"configs"
 	],
 	"keywords": [
+		"biome",
 		"configs"
 	],
 	"license": "MIT",
