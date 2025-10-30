@@ -9,7 +9,8 @@
 	},
 	"description": "Scalable, type-safe Standard Schema validation library",
 	"devDependencies": {
-		"@biomejs/biome": "catalog:"
+		"@biomejs/biome": "catalog:",
+		"@sytizen/configs": "workspace:"
 	},
 	"exports": {
 		"./package.json": "./package.json"
