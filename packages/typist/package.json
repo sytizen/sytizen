@@ -24,6 +24,9 @@
 	"license": "MIT",
 	"name": "@sytizen/typist",
 	"packageManager": "bun@1.3.0",
+	"peerDependencies": {
+		"typescript": "catalog:"
+	},
 	"repository": {
 		"directory": "packages/typist",
 		"type": "git",
