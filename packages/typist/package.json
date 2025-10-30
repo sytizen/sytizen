@@ -1,0 +1,31 @@
+{
+	"$schema": "https://www.schemastore.org/package.json",
+	"author": {
+		"email": "hunarroopcodes@gmail.com",
+		"name": "Hunar Roop Kahlon"
+	},
+	"bugs": {
+		"url": "https://github.com/sytizen/sytizen/issues"
+	},
+	"description": "Scalable, type-safe Standard Schema validation library",
+	"exports": {
+		"./package.json": "./package.json"
+	},
+	"keywords": [
+		"infer",
+		"schema",
+		"typescript",
+		"validation"
+	],
+	"license": "MIT",
+	"name": "@sytizen/typist",
+	"packageManager": "bun@1.3.0",
+	"repository": {
+		"directory": "packages/typist",
+		"type": "git",
+		"url": "git+https://github.com/sytizen/sytizen.git"
+	},
+	"sideEffects": false,
+	"type": "module",
+	"version": "0.0.0"
+}
