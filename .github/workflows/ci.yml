@@ -23,6 +23,7 @@ jobs:
         package-directory:
           - .
           - packages/configs
+          - packages/typist
 on:
   pull_request:
   push:
