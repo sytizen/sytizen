@@ -9,6 +9,9 @@
 	"sideEffects": false,
 	"type": "module",
 	"workspaces": {
+		"catalog": {
+			"@biomejs/biome": "2.3.4"
+		},
 		"packages": [
 			"packages/configs"
 		]
