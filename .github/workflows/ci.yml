@@ -1,0 +1,30 @@
+concurrency:
+  cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.ref }}  
+jobs:
+  biome:
+    defaults:
+      run:
+        working-directory: ${{ matrix.working-directory }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v5
+      - name: setup bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version-file: package.json
+      - name: install dependencies
+        run: bun ci
+      - name: run biome
+        run: bun biome ci
+    strategy:
+      fail-fast: true
+      matrix:
+        working-directory:
+          - packages/configs
+on:
+  pull_request:
+  push:
+    branches:
+      - master
