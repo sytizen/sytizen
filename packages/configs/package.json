@@ -17,14 +17,17 @@
 		"node": ">=24.12"
 	},
 	"exports": {
+		"./biome.json": "./config/biome.json",
 		"./package.json": "./package.json"
 	},
 	"files": [
 		"LICENSE",
 		"README.md",
+		"config",
 		"package.json"
 	],
 	"keywords": [
+		"biome",
 		"configs"
 	],
 	"license": "MIT",
