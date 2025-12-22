@@ -9,7 +9,8 @@
 	},
 	"description": "Framework for building fast modern websites",
 	"devDependencies": {
-		"@biomejs/biome": "catalog:"
+		"@biomejs/biome": "catalog:",
+		"@sytizen/configs": "workspace:"
 	},
 	"engines": {
 		"bun": ">=1.3",
