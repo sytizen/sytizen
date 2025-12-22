@@ -18,6 +18,9 @@
     "packages/sytizen": {
       "name": "@sytizen/sytizen",
       "version": "0.0.0",
+      "devDependencies": {
+        "@biomejs/biome": "catalog:",
+      },
     },
   },
   "catalog": {
