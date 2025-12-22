@@ -5,6 +5,7 @@
     "": {
       "devDependencies": {
         "@biomejs/biome": "catalog:",
+        "@sytizen/configs": "workspace:",
       },
     },
     "packages/configs": {
