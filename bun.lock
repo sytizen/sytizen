@@ -15,6 +15,10 @@
         "@biomejs/biome": "catalog:",
       },
     },
+    "packages/sytizen": {
+      "name": "@sytizen/sytizen",
+      "version": "0.0.0",
+    },
   },
   "catalog": {
     "@biomejs/biome": "2.3.10",
@@ -39,5 +43,7 @@
     "@biomejs/cli-win32-x64": ["@biomejs/cli-win32-x64@2.3.10", "", { "os": "win32", "cpu": "x64" }, "sha512-pHEFgq7dUEsKnqG9mx9bXihxGI49X+ar+UBrEIj3Wqj3UCZp1rNgV+OoyjFgcXsjCWpuEAF4VJdkZr3TrWdCbQ=="],
 
     "@sytizen/configs": ["@sytizen/configs@workspace:packages/configs"],
+
+    "@sytizen/sytizen": ["@sytizen/sytizen@workspace:packages/sytizen"],
   }
 }
