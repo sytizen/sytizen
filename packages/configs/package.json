@@ -39,6 +39,7 @@
 		"url": "git+https://github.com/sytizen/sytizen.git"
 	},
 	"scripts": {
+		"fmt": "biome check --write",
 		"lint": "biome check"
 	},
 	"sideEffects": false,
