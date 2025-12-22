@@ -18,7 +18,8 @@
 	},
 	"exports": {
 		"./biome.json": "./config/biome.json",
-		"./package.json": "./package.json"
+		"./package.json": "./package.json",
+		"./tsconfig/base.json": "./config/tsconfig/base.json"
 	},
 	"files": [
 		"LICENSE",
@@ -28,7 +29,8 @@
 	],
 	"keywords": [
 		"biome",
-		"configs"
+		"configs",
+		"typescript"
 	],
 	"license": "MIT",
 	"name": "@sytizen/configs",
