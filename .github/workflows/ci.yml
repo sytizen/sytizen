@@ -18,6 +18,9 @@ jobs:
       - name: lint files
         run: bun biome ci
   typecheck:
+    defaults:
+      run:
+        working-directory: ${{ matrix.working-directory }}
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -31,7 +34,7 @@ jobs:
       - name: generate types
         run: bun run --workspaces --if-present typegen
       - name: check types
-        run: bun typegen
+        run: bun typecheck
     strategy:
       fail-fast: true
       matrix:
