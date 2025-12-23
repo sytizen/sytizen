@@ -40,6 +40,27 @@ jobs:
       matrix:
         working-directory:
           - packages/typedome
+  test:
+    defaults:
+      run:
+        working-directory: ${{ matrix.working-directory }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v6
+      - name: setup bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version-file: package.json
+      - name: install dependencies
+        run: bun ci
+      - name: run tests
+        run: bun test
+    strategy:
+      fail-fast: true
+      matrix:
+        working-directory:
+          - packages/typedome
 on:
   merge_group:
   pull_request:
