@@ -26,6 +26,10 @@
         "typescript": "catalog:",
       },
     },
+    "packages/typedome": {
+      "name": "@sytizen/typedome",
+      "version": "0.0.0",
+    },
   },
   "catalog": {
     "@biomejs/biome": "2.3.10",
@@ -53,6 +57,8 @@
     "@sytizen/configs": ["@sytizen/configs@workspace:packages/configs"],
 
     "@sytizen/sytizen": ["@sytizen/sytizen@workspace:packages/sytizen"],
+
+    "@sytizen/typedome": ["@sytizen/typedome@workspace:packages/typedome"],
 
     "typescript": ["typescript@5.9.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw=="],
   }

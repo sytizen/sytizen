@@ -1,0 +1,41 @@
+{
+	"$schema": "https://www.schemastore.org/package.json",
+	"author": {
+		"email": "hunarroopcodes@gmail.com",
+		"name": "Hunar Roop Kahlon"
+	},
+	"bugs": {
+		"url": "https://github.com/sytizen/sytizen/issues"
+	},
+	"description": "Type-safe schema validation",
+	"engines": {
+		"bun": ">=1.3",
+		"deno": ">=2.6",
+		"node": ">=24.12"
+	},
+	"exports": {
+		"./package.json": "./package.json"
+	},
+	"files": [
+		"LICENSE",
+		"README.md",
+		"package.json"
+	],
+	"keywords": [
+		"infer",
+		"schema",
+		"typescript",
+		"validation"
+	],
+	"license": "MIT",
+	"name": "@sytizen/typedome",
+	"packageManager": "bun@1.3.5",
+	"repository": {
+		"directory": "packages/typedome",
+		"type": "git",
+		"url": "git+https://github.com/sytizen/sytizen.git"
+	},
+	"sideEffects": false,
+	"type": "module",
+	"version": "0.0.0"
+}

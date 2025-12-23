@@ -27,6 +27,7 @@
 		},
 		"packages": [
 			"packages/configs",
+			"packages/typedome",
 			"packages/sytizen"
 		]
 	}
