@@ -45,7 +45,8 @@
 	"scripts": {
 		"fmt": "biome check --write",
 		"lint": "biome check",
-		"typecheck": "tsc --noEmit"
+		"typecheck": "tsc --noEmit",
+		"typegen": "tsc"
 	},
 	"sideEffects": false,
 	"type": "module",
