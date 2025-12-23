@@ -13,8 +13,6 @@ jobs:
           bun-version-file: package.json
       - name: install dependencies
         run: bun ci
-      - name: generate types
-        run: bun run --workspaces --if-present typegen
       - name: lint files
         run: bun biome ci
   typecheck:
