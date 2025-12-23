@@ -13,7 +13,8 @@
 	"description": "Type-safe schema validation",
 	"devDependencies": {
 		"@biomejs/biome": "catalog:",
-		"@sytizen/configs": "workspace:"
+		"@sytizen/configs": "workspace:",
+		"@types/bun": "catalog:"
 	},
 	"engines": {
 		"bun": ">=1.3",
