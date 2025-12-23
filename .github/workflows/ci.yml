@@ -17,6 +17,26 @@ jobs:
         run: bun run --workspaces --if-present typegen
       - name: lint files
         run: bun biome ci
+  typecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v6
+      - name: setup bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version-file: package.json
+      - name: install dependencies
+        run: bun ci
+      - name: generate types
+        run: bun run --workspaces --if-present typegen
+      - name: check types
+        run: bun typegen
+    strategy:
+      fail-fast: true
+      matrix:
+        working-directory:
+          - packages/typedome
 on:
   merge_group:
   pull_request:
