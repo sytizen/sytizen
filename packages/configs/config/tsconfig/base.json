@@ -12,7 +12,6 @@
 		"module": "es2022",
 		"moduleResolution": "bundler",
 		"moduleDetection": "force",
-		"noEmit": true,
 		"noErrorTruncation": true,
 		"noFallthroughCasesInSwitch": true,
 		"noImplicitOverride": true,

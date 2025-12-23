@@ -3,8 +3,7 @@
 	"compilerOptions": {
 		"declaration": true,
 		"declarationMap": true,
-		"isolatedDeclarations": true,
-		"noEmit": false
+		"isolatedDeclarations": true
 	},
 	"extends": ["@sytizen/configs/tsconfig/base.json"]
 }
