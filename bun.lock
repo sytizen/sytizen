@@ -40,6 +40,7 @@
   },
   "catalog": {
     "@biomejs/biome": "2.3.10",
+    "@standard-schema/spec": "^1.0.0",
     "typescript": "^5.9.3",
   },
   "packages": {
