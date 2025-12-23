@@ -19,7 +19,8 @@
 	"exports": {
 		"./biome.json": "./config/biome.json",
 		"./package.json": "./package.json",
-		"./tsconfig/base.json": "./config/tsconfig/base.json"
+		"./tsconfig/base.json": "./config/tsconfig/base.json",
+		"./tsconfig/lib.json": "./config/tsconfig/lib.json"
 	},
 	"files": [
 		"LICENSE",

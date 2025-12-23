@@ -39,6 +39,22 @@ Add the following in your `tsconfig.json`:
 }
 ```
 
+#### Lib
+
+Add the following in your `tsconfig.json`:
+
+```json
+{
+	"$schema": "https://www.schemastore.org/tsconfig.json",
+	"compilerOptions": {
+		"outDir": "dist",
+		"rootDir": "src"
+	},
+	"exclude": ["dist", "node_modules", "**/*.test.*"],
+	"extends": ["@sytizen/configs/tsconfig/lib.json"]
+}
+```
+
 ## License
 
 MIT. See [LICENSE](./LICENSE) for more information.

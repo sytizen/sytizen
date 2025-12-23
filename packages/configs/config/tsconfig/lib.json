@@ -1,0 +1,10 @@
+{
+	"$schema": "https://www.schemastore.org/tsconfig.json",
+	"compilerOptions": {
+		"declaration": true,
+		"declarationMap": true,
+		"isolatedDeclarations": true,
+		"noEmit": false
+	},
+	"extends": ["@sytizen/configs/tsconfig/base.json"]
+}
