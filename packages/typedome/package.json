@@ -34,6 +34,9 @@
 	"license": "MIT",
 	"name": "@sytizen/typedome",
 	"packageManager": "bun@1.3.5",
+	"peerDependencies": {
+		"typescript": "catalog:"
+	},
 	"repository": {
 		"directory": "packages/typedome",
 		"type": "git",

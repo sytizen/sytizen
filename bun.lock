@@ -33,6 +33,9 @@
         "@biomejs/biome": "catalog:",
         "@sytizen/configs": "workspace:",
       },
+      "peerDependencies": {
+        "typescript": "catalog:",
+      },
     },
   },
   "catalog": {
