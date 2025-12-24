@@ -24,7 +24,9 @@ import type { StandardSchemaV1 } from "@standard-schema/spec";
  */
 export function createPathSegment(
 	value: PropertyKey,
-): StandardSchemaV1.PathSegment {
+): StandardSchemaV1.PathSegment;
+
+export function createPathSegment(value: unknown) {
 	if (
 		typeof value !== "number" &&
 		typeof value !== "string" &&
