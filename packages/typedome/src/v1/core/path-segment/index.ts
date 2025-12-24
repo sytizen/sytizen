@@ -40,3 +40,42 @@ export function createPathSegment(
 
 	return { key: value };
 }
+
+/**
+ * Type guard that checks if a value is a valid {@link StandardSchemaV1.PathSegment}.
+ *
+ * This function performs runtime validation to determine if the given value conforms to
+ * the PathSegment interface structure. It verifies that the value is an object with a
+ * `key` property that is a valid {@link PropertyKey} (string, number, or symbol).
+ *
+ * @param value - The value to check. Can be any type.
+ * @returns `true` if the value is a valid PathSegment, `false` otherwise.
+ *
+ * @example
+ * ```typescript
+ * // Valid path segments
+ * isPathSegment({ key: "username" }) // true
+ * isPathSegment({ key: 42 })         // true
+ * isPathSegment({ key: Symbol("id") }) // true
+ *
+ * // Invalid values
+ * isPathSegment({}) // false (missing key)
+ * isPathSegment({ key: {} }) // false (key is not PropertyKey)
+ * isPathSegment(null) // false (not an object)
+ * isPathSegment("string") // false (not an object)
+ * isPathSegment(42) // false (not an object)
+ * isPathSegment([{ key: "test" }]) // false (array, not plain object)
+ * ```
+ */
+export function isPathSegment(
+	value: unknown,
+): value is StandardSchemaV1.PathSegment {
+	return (
+		typeof value === "object" &&
+		value !== null &&
+		"key" in value &&
+		(typeof value.key === "number" ||
+			typeof value.key === "string" ||
+			typeof value.key === "symbol")
+	);
+}
