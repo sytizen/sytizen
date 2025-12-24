@@ -88,3 +88,49 @@ export function createIssue(message: unknown, path?: unknown) {
 
 	return { message, path };
 }
+
+/**
+ * Type guard that checks if a value is a valid {@link StandardSchemaV1.Issue}.
+ *
+ * This function performs runtime validation to determine if the given {@link value} conforms to
+ * the {@link StandardSchemaV1.Issue} interface structure. It verifies that the {@link value} is an object with a
+ * {@link message} property that is a string, and optionally a {@link path} property containing
+ * valid path segments.
+ *
+ * @param value - The value to check. Can be any type.
+ * @returns `true` if the {@link value} is a valid Issue, `false` otherwise.
+ *
+ * @example
+ * ```typescript
+ * // Valid issues
+ * isIssue({ message: "Invalid input" }) // true
+ * isIssue({ message: "Invalid input", path: ["user", "email"] }) // true
+ * isIssue({ message: "Invalid input", path: [0, "items", Symbol("id")] }) // true
+ *
+ * // Invalid values
+ * isIssue({}) // false (missing {@link message})
+ * isIssue({ message: 123 }) // false ({@link message} not string)
+ * isIssue({ message: "Error", path: "invalid" }) // false ({@link path} not array)
+ * isIssue({ message: "Error", path: ["valid", {}] }) // false (invalid {@link path} segment)
+ * isIssue(null) // false (not object)
+ * isIssue("string") // false (not object)
+ * isIssue([]) // false (not object with {@link message})
+ * ```
+ */
+export function isIssue(value: unknown): value is StandardSchemaV1.Issue {
+	return (
+		typeof value === "object" &&
+		value !== null &&
+		"message" in value &&
+		typeof value.message === "string" &&
+		(!("path" in value) ||
+			(Array.isArray(value.path) &&
+				value.path.every(
+					(segment) =>
+						typeof segment === "number" ||
+						typeof segment === "string" ||
+						typeof segment === "symbol" ||
+						isPathSegment(segment),
+				)))
+	);
+}
