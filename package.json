@@ -26,6 +26,9 @@
 		"type": "git",
 		"url": "git+https://github.com/sytizen/sytizen.git"
 	},
+	"scripts": {
+		"lint": "biome check"
+	},
 	"sideEffects": false,
 	"type": "module",
 	"version": "0.0.0"
