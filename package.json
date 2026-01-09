@@ -8,6 +8,9 @@
 	"exports": {
 		"./package.json": "./package.json"
 	},
+	"devDependencies": {
+		"@biomejs/biome": "2.3.11"
+	},
 	"files": [
 		"LICENSE",
 		"README.md",
