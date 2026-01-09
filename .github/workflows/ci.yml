@@ -15,6 +15,29 @@ jobs:
         run: bun ci
       - name: run 'bun biome ci'
         run: bun biome ci
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v6
+      - name: setup bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version-file: .tool-versions
+      - name: run 'bun ci'
+        run: bun ci
+      - name: run 'bun test'
+        run: bun test --coverage --coverage-reporter=lcov --reporter=junit --reporter-outfile=junit.xml
+      - name: upload coverage to CodeCov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+      - if: ${{ !cancelled() }}
+        name: upload coverage to CodeCov
+        uses: codecov/codecov-action@v5
+        with:
+          report_type: test_results
+          token: ${{ secrets.CODECOV_TOKEN }}
   typecheck:
     runs-on: ubuntu-latest
     steps:
