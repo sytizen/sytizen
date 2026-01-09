@@ -33,7 +33,7 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
       - if: ${{ !cancelled() }}
-        name: upload coverage to CodeCov
+        name: upload test results to CodeCov
         uses: codecov/codecov-action@v5
         with:
           report_type: test_results
