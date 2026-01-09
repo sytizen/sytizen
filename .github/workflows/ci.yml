@@ -15,6 +15,19 @@ jobs:
         run: bun ci
       - name: run 'bun biome ci'
         run: bun biome ci
+  typecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v6
+      - name: setup bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version-file: .tool-versions
+      - name: run 'bun ci'
+        run: bun ci
+      - name: run 'bun tsc'
+        run: bun tsc --noEmit
 on:
   merge_group:
   pull_request:
