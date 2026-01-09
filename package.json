@@ -1,0 +1,29 @@
+{
+	"$schema": "https://www.schemastore.org/package.json",
+	"author": "Hunar Roop Kahlon <hunarroopcodes@gmail.com>",
+	"bugs": {
+		"url": "https://github.com/sytizen/sytizen/issues"
+	},
+	"description": "Framework for building fast modern websites",
+	"exports": {
+		"./package.json": "./package.json"
+	},
+	"files": [
+		"LICENSE",
+		"README.md",
+		"package.json"
+	],
+	"keywords": [
+		"framework",
+		"website"
+	],
+	"license": "MIT",
+	"name": "@sytizen/sytizen",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sytizen/sytizen.git"
+	},
+	"sideEffects": false,
+	"type": "module",
+	"version": "0.0.0"
+}
