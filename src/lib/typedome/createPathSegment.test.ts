@@ -23,4 +23,18 @@ describe(createPathSegment, () => {
 			).toEqualTypeOf<StandardSchemaV1.PathSegment>();
 		});
 	});
+
+	describe("error edge cases", () => {
+		test.each([
+			{ description: null, invalidKey: null },
+			{ description: undefined, invalidKey: undefined },
+			{ description: true, invalidKey: true },
+			{ description: new Object(), invalidKey: {} },
+			{ description: [], invalidKey: [] },
+			{ description: "function", invalidKey: () => {} },
+		])("throws TypeError for invalid key $description", ({ invalidKey }) => {
+			// @ts-expect-error: intentional errorous type for testing
+			expect(() => createPathSegment(invalidKey)).toThrow(TypeError);
+		});
+	});
 });
