@@ -1,0 +1,38 @@
+{
+	"$schema": "https://www.schemastore.org/package.json",
+	"author": {
+		"email": "hunarroopcodes@gmail.com",
+		"name": "Hunar Roop Kahlon"
+	},
+	"bugs": {
+		"url": "https://github.com/sytizen/sytizen/issues"
+	},
+	"description": "Standard Schema data declaration, generation, and validation",
+	"exports": {
+		"./LICENSE": "./LICENSE",
+		"./package.json": "./package.json"
+	},
+	"files": [
+		"./LICENSE",
+		"./README.md",
+		"./package.json"
+	],
+	"keywords": [
+		"data",
+		"declaration",
+		"generation",
+		"schema",
+		"typescript",
+		"validation"
+	],
+	"license": "MIT",
+	"name": "@sytizen/schema",
+	"repository": {
+		"directory": "packages/schema",
+		"type": "git",
+		"url": "git+https://github.com/sytizen/sytizen.git"
+	},
+	"sideEffects": false,
+	"type": "module",
+	"version": "0.0.0"
+}
