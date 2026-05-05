@@ -30,6 +30,9 @@
 	],
 	"license": "MIT",
 	"name": "@sytizen/schema",
+	"peerDependencies": {
+		"typescript": "catalog:"
+	},
 	"repository": {
 		"directory": "packages/schema",
 		"type": "git",

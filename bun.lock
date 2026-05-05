@@ -13,6 +13,9 @@
       "devDependencies": {
         "@biomejs/biome": "catalog:",
       },
+      "peerDependencies": {
+        "typescript": "catalog:",
+      },
     },
   },
   "catalog": {
@@ -39,5 +42,7 @@
     "@biomejs/cli-win32-x64": ["@biomejs/cli-win32-x64@2.4.14", "", { "os": "win32", "cpu": "x64" }, "sha512-WL0EG5qE+EAKomGXbf2g6VnSKJhTL3tXC0QRzWRwA5VpjxNYa6H4P7ZWfymbGE4IhZZQi1KXQ2R0YjwInmz2fA=="],
 
     "@sytizen/schema": ["@sytizen/schema@workspace:packages/schema"],
+
+    "typescript": ["typescript@6.0.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw=="],
   }
 }
