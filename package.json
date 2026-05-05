@@ -1,5 +1,8 @@
 {
 	"$schema": "https://www.schemastore.org/package.json",
+	"devDependencies": {
+		"@biomejs/biome": "catalog:"
+	},
 	"private": true,
 	"sideEffects": false,
 	"type": "module",
