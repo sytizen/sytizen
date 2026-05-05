@@ -12,7 +12,8 @@
 	"type": "module",
 	"workspaces": {
 		"catalog": {
-			"@biomejs/biome": "2.4.14"
+			"@biomejs/biome": "2.4.14",
+			"typescript": "^6.0.3"
 		},
 		"packages": [
 			"packages/schema"
