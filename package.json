@@ -2,5 +2,10 @@
 	"$schema": "https://www.schemastore.org/package.json",
 	"private": true,
 	"sideEffects": false,
-	"type": "module"
+	"type": "module",
+	"workspaces": {
+		"catalog": {
+			"@biomejs/biome": "2.4.14"
+		}
+	}
 }
