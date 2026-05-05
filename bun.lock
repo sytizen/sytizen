@@ -10,6 +10,9 @@
     "packages/schema": {
       "name": "@sytizen/schema",
       "version": "0.0.0",
+      "devDependencies": {
+        "@biomejs/biome": "catalog:",
+      },
     },
   },
   "catalog": {
