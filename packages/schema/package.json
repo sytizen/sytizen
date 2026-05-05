@@ -39,6 +39,7 @@
 		"url": "git+https://github.com/sytizen/sytizen.git"
 	},
 	"scripts": {
+		"emit": "tsc",
 		"fmt": "biome check --write",
 		"lint": "biome check",
 		"typecheck": "tsc --noEmit"
