@@ -7,6 +7,9 @@
 	"bugs": {
 		"url": "https://github.com/sytizen/sytizen/issues"
 	},
+	"dependencies": {
+		"@standard-schema/spec": "catalog:"
+	},
 	"description": "Standard Schema data declaration, generation, and validation",
 	"devDependencies": {
 		"@biomejs/biome": "catalog:"
