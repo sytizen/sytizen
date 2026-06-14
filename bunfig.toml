@@ -1,0 +1,4 @@
+#:schema https://www.schemastore.org/bunfig.json
+
+[install]
+minimumReleaseAge = 259200
