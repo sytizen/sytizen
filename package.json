@@ -3,6 +3,9 @@
 	"devDependencies": {
 		"@biomejs/biome": "catalog:"
 	},
+	"peerDependencies": {
+		"typescript": "catalog:"
+	},
 	"private": true,
 	"scripts": {
 		"fmt": "biome check --write",
