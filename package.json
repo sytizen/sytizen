@@ -4,6 +4,9 @@
 		"@biomejs/biome": "catalog:"
 	},
 	"private": true,
+	"scripts": {
+		"lint": "biome check"
+	},
 	"sideEffects": false,
 	"type": "module",
 	"workspaces": {
