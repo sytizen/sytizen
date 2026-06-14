@@ -5,6 +5,7 @@
 	},
 	"private": true,
 	"scripts": {
+		"fmt": "biome check --write",
 		"lint": "biome check"
 	},
 	"sideEffects": false,
