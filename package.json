@@ -8,6 +8,9 @@
 	},
 	"type": "module",
 	"sideEffects": false,
+	"scripts": {
+		"check:fmt": "oxfmt --check"
+	},
 	"devDependencies": {
 		"oxfmt": "catalog:"
 	}
