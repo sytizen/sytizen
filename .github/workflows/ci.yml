@@ -1,0 +1,19 @@
+jobs:
+  fmt:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v7
+      - name: setup bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version-file: .tool-versions
+      - name: run `bun ci`
+        run: bun ci
+      - name: run `bun run check:fmt`
+        run: bun run check:fmt
+on:
+  pull_request:
+  push:
+    branches:
+      - master
