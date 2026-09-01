@@ -31,5 +31,8 @@
 	"exports": {
 		"./LICENSE": "./LICENSE",
 		"./package.json": "./package.json"
+	},
+	"devDependencies": {
+		"oxfmt": "catalog:"
 	}
 }
