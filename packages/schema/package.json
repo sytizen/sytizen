@@ -33,7 +33,8 @@
 		"./package.json": "./package.json"
 	},
 	"scripts": {
-		"check:fmt": "oxfmt --check"
+		"check:fmt": "oxfmt --check",
+		"fix:fmt": "oxfmt"
 	},
 	"devDependencies": {
 		"oxfmt": "catalog:"
