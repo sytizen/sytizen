@@ -9,6 +9,7 @@
 		"fmt:check": "oxfmt --no-error-on-unmatched-pattern --check",
 		"lint": "oxlint --no-error-on-unmatched-pattern",
 		"lint:fix": "oxlint --no-error-on-unmatched-pattern --fix",
+		"test": "node --conditions '@sytizen:src' --test --experimental-test-coverage --test-reporter spec --test-reporter-destination stdout --test-reporter lcov --test-reporter-destination coverage/lcov.info --test-reporter junit --test-reporter-destination coverage/junit.xml",
 		"type:check": "tsc --build --noEmit"
 	},
 	"devDependencies": {
