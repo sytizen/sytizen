@@ -9,7 +9,8 @@
 	},
 	"devDependencies": {
 		"oxfmt": "catalog:",
-		"oxlint": "catalog:"
+		"oxlint": "catalog:",
+		"oxlint-tsgolint": "catalog:"
 	},
 	"devEngines": {
 		"packageManager": {
