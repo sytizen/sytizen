@@ -3,6 +3,9 @@
 	"private": true,
 	"type": "module",
 	"sideEffects": false,
+	"scripts": {
+		"fmt:check": "oxfmt --no-error-on-unmatched-pattern --check"
+	},
 	"devDependencies": {
 		"oxfmt": "catalog:"
 	},
