@@ -8,7 +8,8 @@
 		"fmt:check": "oxfmt --no-error-on-unmatched-pattern --check"
 	},
 	"devDependencies": {
-		"oxfmt": "catalog:"
+		"oxfmt": "catalog:",
+		"oxlint": "catalog:"
 	},
 	"devEngines": {
 		"packageManager": {
