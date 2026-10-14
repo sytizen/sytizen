@@ -4,6 +4,7 @@
 	"type": "module",
 	"sideEffects": false,
 	"scripts": {
+		"fmt": "oxfmt --no-error-on-unmatched-pattern",
 		"fmt:check": "oxfmt --no-error-on-unmatched-pattern --check"
 	},
 	"devDependencies": {
