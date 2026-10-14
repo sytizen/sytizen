@@ -3,6 +3,9 @@
 	"private": true,
 	"type": "module",
 	"sideEffects": false,
+	"devDependencies": {
+		"oxfmt": "catalog:"
+	},
 	"devEngines": {
 		"packageManager": {
 			"name": "pnpm",
