@@ -30,6 +30,9 @@
 		"./LICENSE": "./LICENSE",
 		"./package.json": "./package.json"
 	},
+	"devDependencies": {
+		"oxfmt": "catalog:"
+	},
 	"devEngines": {
 		"runtime": {
 			"name": "node",
