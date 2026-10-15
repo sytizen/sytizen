@@ -199,6 +199,10 @@ importers:
         version: 7.0.2004
 
   packages/sytizen:
+    dependencies:
+      typescript:
+        specifier: 'catalog:'
+        version: 7.0.2
     devDependencies:
       node:
         specifier: runtime:24.21
