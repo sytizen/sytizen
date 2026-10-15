@@ -1,0 +1,40 @@
+{
+	"$schema": "https://www.schemastore.org/package",
+	"name": "@sytizen/type-guard",
+	"version": "0.0.0",
+	"description": "Runtime type guards so Sytizen (and consumers) can share safe, reusable narrowing helpers",
+	"keywords": [
+		"guard",
+		"sytizen",
+		"type"
+	],
+	"homepage": "https://github.com/sytizen/sytizen/tree/master/packages/type-guard#readme",
+	"bugs": {
+		"url": "https://github.com/sytizen/sytizen/issues"
+	},
+	"license": "MIT",
+	"author": "Hunar Roop Kahlon <hunarroopcodes@gmail.com>",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sytizen/sytizen.git",
+		"directory": "packages/type-guard"
+	},
+	"files": [
+		"./LICENSE",
+		"./README.md",
+		"./package.json"
+	],
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		"./LICENSE": "./LICENSE",
+		"./package.json": "./package.json"
+	},
+	"devEngines": {
+		"runtime": {
+			"name": "node",
+			"version": "24.21",
+			"onFail": "download"
+		}
+	}
+}

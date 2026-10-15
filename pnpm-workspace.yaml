@@ -7,3 +7,4 @@ catalog:
 minimumReleaseAge: 4320
 packages:
   - packages/sytizen
+  - packages/type-guard
