@@ -2,5 +2,8 @@
 	"$schema": "https://www.schemastore.org/tsconfig",
 	"extends": "./tsconfig.json",
 	"files": [],
-	"references": [{ "path": "./packages/sytizen/.release.tsconfig.json" }]
+	"references": [
+		{ "path": "./packages/sytizen/.release.tsconfig.json" },
+		{ "path": "./packages/type-guard/.release.tsconfig.json" }
+	]
 }
