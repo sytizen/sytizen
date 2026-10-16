@@ -1,0 +1,6 @@
+# javascript
+node_modules
+
+# typescript
+dist
+*.tsbuildinfo
