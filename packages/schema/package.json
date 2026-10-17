@@ -42,6 +42,9 @@
 		"test": "node --conditions '@sytizen:src' --test --experimental-test-coverage --test-reporter spec --test-reporter-destination stdout --test-reporter lcov --test-reporter-destination coverage/lcov.info --test-reporter junit --test-reporter-destination coverage/junit.xml",
 		"type:check": "tsc --build --noEmit"
 	},
+	"dependencies": {
+		"@standard-schema/spec": "catalog:"
+	},
 	"devDependencies": {
 		"oxfmt": "catalog:",
 		"oxlint": "catalog:",
