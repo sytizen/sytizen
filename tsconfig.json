@@ -3,6 +3,7 @@
 	"extends": "./.tsconfig.json",
 	"files": [],
 	"references": [
+		{ "path": "./packages/schema/tsconfig.json" },
 		{ "path": "./packages/sytizen/tsconfig.json" },
 		{ "path": "./packages/type-guard/tsconfig.json" }
 	]
