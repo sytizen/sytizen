@@ -203,6 +203,9 @@ importers:
       node:
         specifier: runtime:24.21
         version: runtime:24.21.0
+      oxfmt:
+        specifier: 'catalog:'
+        version: 0.72.0
 
   packages/sytizen:
     dependencies:
