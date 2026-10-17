@@ -1,4 +1,5 @@
 catalog:
+  "@standard-schema/spec": ^1.1.0
   oxfmt: ^0.72.0
   oxlint: ^1.87.0
   oxlint-tsgolint: ^7.0.2004
