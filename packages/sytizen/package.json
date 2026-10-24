@@ -1,0 +1,41 @@
+{
+	"$schema": "https://www.schemastore.org/package",
+	"name": "@sytizen/sytizen",
+	"version": "0.0.0",
+	"description": "Fast modern web framework",
+	"keywords": [
+		"fast",
+		"framework",
+		"modern",
+		"web"
+	],
+	"homepage": "https://github.com/sytizen/sytizen/tree/master/packages/sytizen#readme",
+	"bugs": {
+		"url": "https://github.com/sytizen/sytizen/issues"
+	},
+	"license": "MIT",
+	"author": "Hunar Roop Kahlon <hunarroopcodes@gmail.com>",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sytizen/sytizen.git",
+		"directory": "packages/sytizen"
+	},
+	"files": [
+		"./LICENSE",
+		"./README.md",
+		"./package.json"
+	],
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		"./LICENSE": "./LICENSE",
+		"./package.json": "./package.json"
+	},
+	"devEngines": {
+		"runtime": {
+			"name": "node",
+			"version": "24.22",
+			"onFail": "download"
+		}
+	}
+}
