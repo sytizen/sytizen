@@ -1,5 +1,6 @@
 catalog:
   oxfmt: ^0.74.0
   oxlint: ^1.89.0
+  oxlint-tsgolint: ^7.0.2004
 # 3 days = 4320 minutes
 minimumReleaseAge: 4320
