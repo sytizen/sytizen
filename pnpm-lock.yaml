@@ -170,6 +170,9 @@ catalogs:
     oxlint:
       specifier: ^1.89.0
       version: 1.89.0
+    oxlint-tsgolint:
+      specifier: ^7.0.2004
+      version: 7.0.2004
 
 importers:
 
@@ -184,6 +187,9 @@ importers:
       oxlint:
         specifier: 'catalog:'
         version: 1.89.0(oxlint-tsgolint@7.0.2004)
+      oxlint-tsgolint:
+        specifier: 'catalog:'
+        version: 7.0.2004
 
 packages:
 
@@ -798,7 +804,6 @@ snapshots:
       '@oxlint-tsgolint/linux-x64': 7.0.2004
       '@oxlint-tsgolint/win32-arm64': 7.0.2004
       '@oxlint-tsgolint/win32-x64': 7.0.2004
-    optional: true
 
   oxlint@1.89.0(oxlint-tsgolint@7.0.2004):
     optionalDependencies:
