@@ -13,6 +13,9 @@
 		"oxlint": "catalog:",
 		"oxlint-tsgolint": "catalog:"
 	},
+	"peerDependencies": {
+		"typescript": "catalog:"
+	},
 	"devEngines": {
 		"packageManager": {
 			"name": "pnpm",
