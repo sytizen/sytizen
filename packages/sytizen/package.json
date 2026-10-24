@@ -34,7 +34,8 @@
 	"scripts": {
 		"fmt": "oxfmt --no-error-on-unmatched-pattern",
 		"fmt:check": "oxfmt --no-error-on-unmatched-pattern --check",
-		"lint": "oxlint --no-error-on-unmatched-pattern"
+		"lint": "oxlint --no-error-on-unmatched-pattern",
+		"lint:fix": "oxlint --no-error-on-unmatched-pattern --fix"
 	},
 	"devDependencies": {
 		"oxfmt": "catalog:",
