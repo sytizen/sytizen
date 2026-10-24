@@ -20,6 +20,29 @@ jobs:
         uses: pnpm/setup@v3
       - name: run `pnpm run lint`
         run: pnpm run lint
+  test:
+    permissions:
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v7
+      - name: setup pnpm
+        uses: pnpm/setup@v3
+      - name: run `pnpm run test`
+        run: pnpm run test
+      - name: upload coverage to codecov
+        if: ${{ !env.ACT }}
+        uses: codecov/codecov-action@v7
+        with:
+          report_type: coverage
+          use_oidc: true
+      - name: upload test results to codecov
+        if: ${{ !env.ACT }}
+        uses: codecov/codecov-action@v7
+        with:
+          report_type: test_results
+          use_oidc: true
   types:
     runs-on: ubuntu-latest
     steps:
