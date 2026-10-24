@@ -1,0 +1,10 @@
+{
+	"$schema": "https://www.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"customConditions": ["@sytizen:src", "@sytizen/sytizen:src"],
+		"outDir": "./dist",
+		"rootDir": "./src"
+	},
+	"extends": ["../../.tsconfig.json"],
+	"files": []
+}
