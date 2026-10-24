@@ -203,6 +203,9 @@ importers:
       node:
         specifier: runtime:24.22
         version: runtime:24.22.1
+      oxfmt:
+        specifier: 'catalog:'
+        version: 0.74.0
 
 packages:
 
