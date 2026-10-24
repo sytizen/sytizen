@@ -1,0 +1,5 @@
+parsers:
+  javascript:
+    enable_partials: true
+  lcov:
+    partials_as_hits: true
