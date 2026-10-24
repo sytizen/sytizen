@@ -42,6 +42,9 @@
 		"oxlint": "catalog:",
 		"oxlint-tsgolint": "catalog:"
 	},
+	"peerDependencies": {
+		"typescript": "catalog:"
+	},
 	"devEngines": {
 		"runtime": {
 			"name": "node",
