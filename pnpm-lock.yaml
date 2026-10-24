@@ -198,6 +198,25 @@ importers:
         specifier: 'catalog:'
         version: 7.0.2004
 
+  packages/sytizen:
+    dependencies:
+      typescript:
+        specifier: 'catalog:'
+        version: 7.0.2
+    devDependencies:
+      node:
+        specifier: runtime:24.22
+        version: runtime:24.22.1
+      oxfmt:
+        specifier: 'catalog:'
+        version: 0.74.0
+      oxlint:
+        specifier: 'catalog:'
+        version: 1.89.0(oxlint-tsgolint@7.0.2004)
+      oxlint-tsgolint:
+        specifier: 'catalog:'
+        version: 7.0.2004
+
 packages:
 
   '@oxfmt/binding-android-arm-eabi@0.74.0':
